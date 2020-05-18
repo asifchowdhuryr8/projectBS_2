@@ -1,0 +1,57 @@
+body {
+  margin-top: 90px; }
+
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  background: #fff;
+  opacity: 0.8; }
+  .navbar .nav-item {   
+    font-size: 1.4rem;  /* Use to change navbar text size */
+    padding-right: 20px; }
+    .navbar .nav-item .nav-link {
+      color: #252525; }
+    .navbar .nav-item .nav-link:hover {
+      color: #3292a6; }
+  .navbar .nav-item:last-child {
+    padding-right: 0; } /* to make 0 padding to the last child (contact) */
+
+#showcase {
+  position: relative;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  min-height: 600px; }
+  #showcase .primary-overlay {
+    background: rgba(78, 130, 136, 0.5);
+    min-height: 600px;
+    position: absolute; /*After using min-height: 600px in showcase & primary-overlay if overlay doesn't work properly than use position. position: absolute use to make this overlay perfect accourding to showcase position: relative. */
+    top: 0;
+    left: 0;
+    width: 100%;  /* 100% equal to showcase width */
+    height: 100%; /* 100% equal to showcase height */ }
+
+#subscribe {
+  background: #252525; }
+
+#authors img {
+  margin-top: -50px; }  /* to push up images */
+
+#authors .fa {
+  font-size: 25px; }
+
+#authors .card:hover {  /* Everything is inside of this card so I have changed hover hover effect here  */
+  background: #3292a6;
+  color: #fff; }
+  #authors .card:hover .fa {
+    color: #fff; }
+    #authors .card a .fa:hover{
+      transform: rotate(360deg);
+      transition: all 1s;   /* Animation in social icon */
+    }
+#authors .card{
+  margin-top: 2.3em;
+}
+
+@media (max-width: 576px) {
+  #showcase h1 {
+    font-size: 4rem; } }
